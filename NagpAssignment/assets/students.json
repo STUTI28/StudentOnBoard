@@ -1,0 +1,45 @@
+
+    [{
+      "name": "John",
+      "DOB": "12-04-1992",
+      "Domicile:": "Yes",
+      "Birth Certificate":"Yes",
+      "Marksheet": "Yes",
+      "Police Clearance": "Yes",
+      "Passport" : "Yes",
+      "Declaration": "Yes",
+      "Father's Name": "John",
+      "Mother's Name": "John",
+      "Last Class Score": 90,
+      "category": "International"
+    },
+    {
+      "name": "Deepasha",
+      "DOB": "12-04-1992",
+      "Domicile:": "Yes",
+      "Birth Certificate":"Yes",
+      "Marksheet": "Yes",
+      "Police Clearance": "Yes",
+      "Passport" : "Yes",
+      "Declaration": "Yes",
+      "Father's Name": "John",
+      "Mother's Name": "John",
+      "Last Class Score": 90,
+      "category": "International"
+    },
+    {
+      "name": "Udit",
+      "DOB": "12-04-1992",
+      "Domicile:": "Yes",
+      "Birth Certificate":"Yes",
+      "Marksheet": "Yes",
+      "Police Clearance": "Yes",
+      "Passport" : "Yes",
+      "Declaration": "Yes",
+      "Father's Name": "John",
+      "Mother's Name": "John",
+      "Last Class Score": 90,
+      "category": "International"
+    }]
+  
+  
