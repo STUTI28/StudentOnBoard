@@ -1,0 +1,65 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <table>
+    <tr>
+      <td> Student Name:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td> Category:</td>
+      <td> <select class="form-control" id="catgry" formControlName="Category">
+            <option *ngFor="let catgry of Category" [value]="catgry.id">{{catgry.name}}</option>      </select>
+      </td>
+    </tr>
+    <tr> Documents:</tr>
+    <tr>
+        <td> Domicile:</td>
+        <td> <input type="checkbox" formControlName ="domicile">
+        </td>
+    </tr>
+    <tr> 
+        <td> Birth Certificate:</td>
+        <td> <input type="checkbox" formControlName ="birthCertificate">
+        </td>
+    </tr>
+    <tr> 
+        <td> Marksheet:</td>
+        <td> <input type="checkbox" formControlName ="marksheet">
+        </td>
+    </tr>
+    <tr> 
+        <td> Police Clearance:</td>
+        <td> <input type="checkbox" formControlName ="policeClearance">
+        </td>
+    </tr>
+    <tr> 
+        <td> Passport:</td>
+        <td> <input type="checkbox" formControlName ="passport">
+        </td>
+    </tr>
+    <tr> 
+        <td> Declaration:</td>
+        <td> <input type="checkbox" formControlName ="declaration">
+        </td>
+    </tr>
+    <tr> 
+        <td> DOB:</td>
+        <td> <ejs-datepicker formControlName="datepicker" id='datepicker' placeholder='Select a date' [value]='value' [min]='minDate' [max]='maxDate'></ejs-datepicker>
+        </td>
+    </tr>
+    <tr>
+        <td> Father's Name:</td>
+        <td><input type="text" formControlName="fname"></td>
+    </tr>
+    <tr>
+          <td> Mother's Name:</td>
+          <td><input type="text" formControlName="mname"></td>
+    </tr>
+    <tr>
+        <td>Last Class Score:</td>
+        <td><input type="number" formControlName="score"></td>
+      </tr>
+  </table>
+
+  <button type="submit">Submit</button>
+
+</form>

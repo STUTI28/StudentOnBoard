@@ -1,0 +1,35 @@
+
+<table>
+  <!-- <li *ngFor="let student of con" >{{student.name}} </li> -->
+
+  <!-- <li *ngFor="let student of con ; let i = index "> -->
+      <tr>
+          <th> Name</th>
+          <th> Category </th> 
+          <th> Actions </th>
+    </tr>
+    <tr *ngFor="let student of con ; let i = index ">
+        <td>
+            {{i+1}} -  {{student.name}}
+         </td>
+
+         <td>
+             {{student.category}}
+        </td>
+  
+         <td>
+             <button class="btn btn-default"  type="button" (click)="deleteFieldValue(i)">Delete</button>
+         </td>
+
+         <td>
+            <button class="btn btn-default"  type="button" (click)="editFieldValue(i)">Edit</button>
+        </td>
+   
+        <td>
+            <button class="btn btn-default"  type="button" (click)="viewFieldValue(i)">View</button>
+        </td>
+    </tr>
+
+   <!-- </li> -->
+
+  </table>
