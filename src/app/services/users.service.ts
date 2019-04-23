@@ -20,7 +20,7 @@ export class UsersService {
   constructor(private http: HttpClient) {}
 
   getEmployees() {
-    const url = '/assets/students.json';
+    const url = 'assets/students.json';
 
     return this.http.get<Employee[]>(url).pipe(
       tap(data => {
@@ -30,7 +30,7 @@ export class UsersService {
   }
 
   fetchEmployees() {
-    const url = '/assets/students.json';
+    const url = 'assets/students.json';
 
     this.http.get<Employee[]>(url).subscribe(data => {
       this.employees$.next(data);

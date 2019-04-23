@@ -15,6 +15,7 @@ export class AppComponent implements OnDestroy {
   editOrView: true;
   routeLinks: any[];
   activeLinkIndex = -1;
+  tabValue;
   
 
   constructor(private messageService: MessageService , private router: Router) 
